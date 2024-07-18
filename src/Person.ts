@@ -7,11 +7,19 @@ class Person {
 		this.age = age;
 	}
 	
-	tellMyName(){
-		console.log(`I ame ${this.name}`);
+	public getName(): string{
+		return this.name;
 	}
 	
-	tellMyAge(){
+	public getAge(): number{
+		return this.age;
+	}
+	
+	public tellMyName(){
+		console.log(`I am ${this.name}`);
+	}
+	
+	public tellMyAge(){
 		console.log(`I am ${this.age} years old`);
 	}
 }

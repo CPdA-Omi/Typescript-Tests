@@ -1,11 +1,26 @@
-import Person from "./src/person.js"
+import Person from "./src/Person.js";
 
-const jean = new Person('Jean', 28);
-const marius = new Person('Marius', 21);
+import bankCustomerTest from "./tests/bankcustomer.test.js";
 
-jean.tellMyName();
-jean.tellMyAge();
+function poo1(): void {
+	const jean = new Person('Jean', 28);
+	const marius = new Person('Marius', 21);
 
-marius.tellMyName();
-marius.tellMyAge();
+	jean.tellMyName();
+	jean.tellMyAge();
+
+	marius.tellMyName();
+	marius.tellMyAge();
+}
+
+function poo2(): void {
+	bankCustomerTest();
+}
+
+function main(): number {
+	poo2();
+	return 1;
+}
+
+main();
 
